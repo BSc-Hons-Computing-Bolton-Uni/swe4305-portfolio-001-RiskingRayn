@@ -2,7 +2,8 @@ package LogBook.Week1;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main
+{
     static void hellow (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
@@ -10,15 +11,33 @@ public class Main {
         System.out.println ("hello " + name);
 
     }
-
-    static void Square() {
-                Scanner scanner = new Scanner(System.in);
+    static void rectangale()
+    {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter lenth number one: ");
-        String name = scanner.next();                        
+        int len1  = scanner.nextInt();
         System.out.println ("Enter lenth number one: ");
+        int len2  = scanner.nextInt();
+        int aria = len1 * len2;
+        System.out.println("the aria is" + aria);
     }
+        static void avrage()
+        {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("enter number 1");
+            double num1 = scanner.nextDouble();
+            System.out.println("enter number 2");
+            double num2 = scanner.nextDouble();
+            double ans = (num1 + num2)/2;
+            System.out.println("the avrage is "+ ans);
+
+        }
+
+    
+
     public static void main (String []Args)
     {
         Main.hellow() ;
+
     }
 }
