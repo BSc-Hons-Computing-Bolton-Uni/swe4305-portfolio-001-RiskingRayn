@@ -90,8 +90,17 @@ public class Main
         System.out.println(feet + " feet is " + amount_of_miles + " miles");
     }
 
+    static void task9 ()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the deposited amount: ");
+        double deposit = scanner.nextDouble();
+        double new_amount = (deposit/100) + deposit;
+        System.out.println("your amount after one year will be " + new_amount);
+    }
+
     public static void main (String []Args)
     {
-        task8();
+        task9();
     }
 }
