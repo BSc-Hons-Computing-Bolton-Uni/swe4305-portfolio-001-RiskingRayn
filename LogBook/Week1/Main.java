@@ -79,9 +79,19 @@ public class Main
         days_diffrence += period.getDays();
         System.out.println("You have lived for " + days_diffrence + " days");
     }
+
+    static void task8 ()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the amount of feet: ");
+        double feet = scanner.nextDouble();
+        int feet_in_mile = 5280;
+        double amount_of_miles = feet / feet_in_mile;
+        System.out.println(feet + " feet is " + amount_of_miles + " miles");
+    }
+
     public static void main (String []Args)
     {
-        task7();
-
+        task8();
     }
 }
