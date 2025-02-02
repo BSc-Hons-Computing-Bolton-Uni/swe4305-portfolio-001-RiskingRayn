@@ -1,5 +1,5 @@
 package LogBook.Week1;
-
+import java.time.YearMonth ;
 import java.util.Scanner;
 
 public class Main
@@ -43,9 +43,20 @@ public class Main
      System.out.println(num1 +" "+ num2);
      System.out.println(num2 +" " + num1);
     }
+
+    static void task6()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter your age: ");
+        int age = scanner.nextInt();
+        int year = YearMonth.now().getYear();
+        int birth_year = year - age;
+        System.out.println("your birth year is either " + birth_year + " or " + (birth_year-1));
+    }
+        
     public static void main (String []Args)
     {
-        task5();
+        task6();
 
     }
 }
