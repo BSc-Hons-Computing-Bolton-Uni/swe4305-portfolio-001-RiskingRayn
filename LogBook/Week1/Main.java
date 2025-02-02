@@ -1,5 +1,9 @@
 package LogBook.Week1;
+import java.lang.reflect.Array;
 import java.time.YearMonth ;
+import java.time.LocalDate;
+import java.time.Period;
+
 import java.util.Scanner;
 
 public class Main
@@ -53,10 +57,32 @@ public class Main
         int birth_year = year - age;
         System.out.println("your birth year is either " + birth_year + " or " + (birth_year-1));
     }
-        
+
+    static void task7()
+    {
+        Scanner scanner = new Scanner(System.in);
+        int[] days_in_months =  {31,28,31,30,31,30,31,31,30,31,30,31};
+        System.out.println("Enter your birth year: ");
+        int birth_year = scanner.nextInt();
+        System.out.println("Enter your birth month: ");
+        int birth_month = scanner.nextInt();
+        System.out.println("Enter your birth day: ");
+        int birth_day = scanner.nextInt();
+        LocalDate birth_date = LocalDate.of(birth_year, birth_month, birth_day);
+        LocalDate now =  LocalDate.now();
+        Period period = Period.between(birth_date, now);
+        int days_diffrence = (period.getYears() * 365) + ((int) period.getYears() / 4);
+        for (int month = 0; month < period.getMonths(); month+=1)
+        {
+            days_diffrence +=  days_in_months[month];
+        }
+        days_diffrence += period.getDays();
+        System.out.println("You have lived for " + days_diffrence + " days");
+
+    }
     public static void main (String []Args)
     {
-        task6();
+        task7();
 
     }
 }
