@@ -78,7 +78,6 @@ public class Main
         }
         days_diffrence += period.getDays();
         System.out.println("You have lived for " + days_diffrence + " days");
-
     }
     public static void main (String []Args)
     {
