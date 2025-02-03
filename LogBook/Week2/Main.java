@@ -60,8 +60,17 @@ public class Main
             System.out.println( i + " x 7 = " + (i*7));
     }
 
+    static void task5()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the times table you would like to see: ");
+        int times_table = scanner.nextInt();
+        for (int i = 1; i < 13; i+=1)
+            System.out.println( i + " x " + times_table +" = " + (i*times_table));
+    }
+
     public static void main(String args[])
     {
-        task4();
+        task5();
     }
 }
