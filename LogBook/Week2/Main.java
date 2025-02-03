@@ -108,9 +108,15 @@ public class Main
         else System.out.println("your grade is invalid");
     }
 
+    static void task8()
+    {
+        for (int i=2; i<22; i+=2)
+            System.out.println(i);
+    }
+
     public static void main(String args[])
     {
-        task7();
+        task8();
     }
 
 
