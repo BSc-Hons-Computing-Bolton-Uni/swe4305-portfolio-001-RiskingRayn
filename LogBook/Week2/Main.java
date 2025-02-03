@@ -50,12 +50,19 @@ public class Main
 
     static void task3()
     {
-        for (int i = 0 ; i < 10; i += 1) System.out.println(i);
+        for (int i = 0 ; i < 10; i += 1)
+            System.out.println(i);
+    }
+
+    static void task4()
+    {
+        for (int i = 1; i < 13; i+=1)
+            System.out.println( i + " x 7 " + (i*7));
     }
 
     public static void main(String args[])
     {
-        task3();
+        task4();
 
     }
 }
