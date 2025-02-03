@@ -1,5 +1,4 @@
 package LogBook.Week1;
-import java.lang.reflect.Array;
 import java.time.YearMonth ;
 import java.time.LocalDate;
 import java.time.Period;
@@ -73,9 +72,7 @@ public class Main
         Period period = Period.between(birth_date, now);
         int days_diffrence = (period.getYears() * 365) + ((int) period.getYears() / 4);
         for (int month = 0; month < period.getMonths(); month+=1)
-        {
             days_diffrence +=  days_in_months[month];
-        }
         days_diffrence += period.getDays();
         System.out.println("You have lived for " + days_diffrence + " days");
     }
@@ -102,7 +99,7 @@ public class Main
     public static void main (String []Args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter the task number you wish to run");
+        System.out.println("enter the task number you wish to run: ");
         String ans = scanner.next();
         switch (ans)
         {
