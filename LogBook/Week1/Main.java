@@ -8,14 +8,14 @@ import java.util.Scanner;
 
 public class Main
 {
-    static void hellow ()
+    static void task2 ()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String name = scanner.next();
         System.out.println("hello " + name);
     }
-    static void rectangale()
+    static void task3()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter lenth number one: ");
@@ -25,7 +25,7 @@ public class Main
         int aria = len1 * len2;
         System.out.println("the aria is: " + aria);
     }
-    static void avrage()
+    static void task4()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter number 1");
@@ -101,6 +101,38 @@ public class Main
 
     public static void main (String []Args)
     {
-        task9();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the task number you wish to run");
+        String ans = scanner.next();
+        switch (ans)
+        {
+            case "1":
+                System.out.println("Hello World!!");
+                break;
+            case "2":
+                task2();
+                break;
+            case "3":
+                task3();
+                break;
+            case "4":
+                task4();
+                break;
+            case "5":
+                task5();
+                break;
+            case "6":
+                task6();
+                break;
+            case "7":
+                task7();
+                break;
+            case "8":
+                task8();
+                break;
+            case "9":
+                task9();
+                break;
+        }
     }
 }
