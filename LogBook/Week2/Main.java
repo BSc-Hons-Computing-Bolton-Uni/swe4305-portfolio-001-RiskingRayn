@@ -57,12 +57,11 @@ public class Main
     static void task4()
     {
         for (int i = 1; i < 13; i+=1)
-            System.out.println( i + " x 7 " + (i*7));
+            System.out.println( i + " x 7 = " + (i*7));
     }
 
     public static void main(String args[])
     {
         task4();
-
     }
 }
