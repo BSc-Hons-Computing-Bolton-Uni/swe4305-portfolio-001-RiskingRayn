@@ -69,8 +69,26 @@ public class Main
             System.out.println( i + " x " + times_table +" = " + (i*times_table));
     }
 
+    static void task6() {
+
+        Scanner scanner = new Scanner(System.in);
+        String ans = "";
+        do {
+            System.out.println("Enter the times table you would like to see: ");
+            int times_table = scanner.nextInt();
+            for (int i = 1; i < 13; i += 1)
+                System.out.println(i + " x " + times_table + " = " + (i * times_table));
+            System.out.println("Would you like to do an other times table. type yes or no: ");
+            ans = scanner.next();
+            ans = ans.toLowerCase();
+        }
+        while (!ans.equals("no"));
+        System.out.println("Goodbye");
+    }
     public static void main(String args[])
     {
-        task5();
+        task6();
     }
+
+
 }
