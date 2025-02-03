@@ -47,9 +47,15 @@ public class Main
         }
         System.out.println("your university grade is " + new_grade);
     }
+
+    static void task3()
+    {
+        for (int i = 0 ; i < 10; i += 1) System.out.println(i);
+    }
+
     public static void main(String args[])
     {
-        task2();
+        task3();
 
     }
 }
