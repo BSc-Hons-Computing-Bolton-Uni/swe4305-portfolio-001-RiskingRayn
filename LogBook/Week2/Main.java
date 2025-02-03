@@ -85,9 +85,32 @@ public class Main
         while (!ans.equals("no"));
         System.out.println("Goodbye");
     }
+
+    static void task7()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your mark: ");
+        int mark = scanner.nextInt();
+        if (mark > 100)
+            System.out.println("your grade is invalid");
+        else if (mark >= 80)
+            System.out.println("your grade is 1st");
+        else if (mark >= 70)
+            System.out.println("your grade is 2:1");
+        else if (mark >=60)
+            System.out.println("your grade is 2:2");
+        else if (mark >=50)
+            System.out.println("your grade is 3rd");
+        else if (mark >=40)
+            System.out.println("your grade is ordinary");
+        else if (mark >=0)
+            System.out.println("your grade is Fail");
+        else System.out.println("your grade is invalid");
+    }
+
     public static void main(String args[])
     {
-        task6();
+        task7();
     }
 
 
