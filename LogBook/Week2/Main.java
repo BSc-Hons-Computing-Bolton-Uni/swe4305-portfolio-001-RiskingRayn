@@ -4,6 +4,12 @@ import java.time.YearMonth;
 
 public class Main
 {
+    /*
+   task 1 is a symple task to creat a porgram that enhanses on week one task 6 an adds
+   a solection statment to display if the user is over the age of 18.
+   this is simaply acheved by adding an if statment.
+     */
+
     static void task1()
     {
         Scanner scanner = new Scanner(System.in);
@@ -15,6 +21,10 @@ public class Main
         if (age > 18)
             System.out.println("You are 18 or older");
     }
+
+    /*
+
+    */
 
     static void task2() {
         Scanner scanner = new Scanner(System.in);
@@ -116,7 +126,7 @@ public class Main
 
     public static void main(String args[])
     {
-        task8();
+        task2();
     }
 
 

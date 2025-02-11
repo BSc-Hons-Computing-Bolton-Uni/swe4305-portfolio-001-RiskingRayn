@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 public class Main
 {
+    /*
+    * task 2 is want the creation of a program that can display text
+    * asking the users name and then replying with hello.
+    */
     static void task2 ()
     {
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +18,12 @@ public class Main
         String name = scanner.next();
         System.out.println("hello " + name);
     }
+    /*
+    * task 3 is a program that asks the user to two lengths on a rectangle
+    * and then the program will take the entered values and multiply them together to
+    * get the aria of the rectangle.
+    *
+    * */
     static void task3()
     {
         Scanner scanner = new Scanner(System.in);
@@ -24,6 +34,10 @@ public class Main
         int aria = len1 * len2;
         System.out.println("the aria is: " + aria);
     }
+    /*
+    * task 4 is a prosses that finds the avrage of two user enteerd numbers.
+    * it does this by adding the number then deviding them by 2
+    */
     static void task4()
     {
         Scanner scanner = new Scanner(System.in);
@@ -34,8 +48,10 @@ public class Main
         double ans = (num1 + num2)/2;
         System.out.println("the avrage is "+ ans);
 
-    }
-
+    }                                                                                                            
+    /*
+    * 
+    */
     static void task5()
     {
      Scanner scanner = new Scanner(System.in);
@@ -104,7 +120,7 @@ public class Main
         switch (ans)
         {
             case "1":
-                System.out.println("Hello World!!");
+                System.out.println("Hello World!!");     // hello world
                 break;
             case "2":
                 task2();
