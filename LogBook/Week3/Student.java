@@ -1,12 +1,14 @@
 package LogBook.Week3;
 
-public class Student
-{
+import java.util.Optional;
+
+public class Student {
     private int id;
-    private String first_name ;
-    private String last_name ;
+    private String first_name;
+    private String last_name;
     private Course course;
 
+    // getters and setter defonition.
     public int get_id ()
         {return this.id;}
 
@@ -25,6 +27,12 @@ public class Student
     public void set_last_name (String new_last_name)
         {this.last_name = new_last_name;}
 
+    // allows the student to be enroled on to a course.
+    public void enrol(Course course)
+        {this.course = course; }
+
+    // this function simpally prints all the class atributes to the console
+    // it printo the course values as well using the course.print_values.
     public void print_values ()
     {
         System.out.println("id " + this.id);
@@ -33,13 +41,25 @@ public class Student
         this.course.print_values();
     }
 
-    Student(int id, String first_name, String last_name, Course course )
+        /* Allowing all the atributes to be passed through to the Student on creation.
+        * the course atribute is not needed to be passed however it can be if needed
+        * the first initaliser will catch it if it is not there and the second
+        * one will catch it if it is there.*/
+
+    public Student(int id, String first_name, String last_name)
     {
-            this.id = id;
-            this.first_name = first_name;
-            this.last_name = last_name;
-            this.course = course;
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.course = null;
     }
 
+    public Student(int id, String first_name, String last_name, Course course)
+    {
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.course = course;
+    }
 
 }
