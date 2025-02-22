@@ -42,8 +42,15 @@ public class Student {
         System.out.println("first name " + this.first_name);
         System.out.println("last name " + this.last_name);
         this.course.print_values();
+        int count = 0;
+        String[] grades = this.course.get_grades(this.marks);
         for (int mark: this.marks)
+        {
             System.out.println("mark " + mark);
+            System.out.println(grades[count]);
+            count+=1;
+        }
+
     }
 
         /* Allowing all the atributes to be passed through to the Student on creation.

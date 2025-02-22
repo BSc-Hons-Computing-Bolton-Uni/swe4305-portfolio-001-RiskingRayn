@@ -27,6 +27,19 @@ public class Course {
     {
         this.course_name = course_name;
     }
+    //getting all the grades from Module.
+    public String[] get_grades(int[] marks)
+    {
+        int count = 0;
+        String[] grades = new String[4];
+        for(Module module: modules)
+        {
+            String grade = module.get_grads_from_marks(marks[count]);
+            grades[count] = grade;
+            count+=1;
+        }
+        return grades;
+    }
 //      prints out all the atributes in Course.
     //  this prossess uses the Module prosses print values to print the
     //  Module values.
@@ -35,7 +48,9 @@ public class Course {
         System.out.println("the course code is " + this.course_code);
         System.out.println("the course name is " + this.course_name);
         for(Module module: this.modules)
-            module.print_values();
+        {   module.print_values();
+        }
+
     }
 
     // the constructer
