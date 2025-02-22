@@ -27,7 +27,7 @@ public class Course {
     {
         this.course_name = course_name;
     }
-//      prints out all of the atributes in Course.
+//      prints out all the atributes in Course.
     //  this prossess uses the Module prosses print values to print the
     //  Module values.
     public void print_values()

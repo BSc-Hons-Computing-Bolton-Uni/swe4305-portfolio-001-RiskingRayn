@@ -1,10 +1,15 @@
 package LogBook.Week3and4;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Student {
+    // defantion of class atributes.
     private int id;
     private String first_name;
     private String last_name;
     private Course course;
+    private int[] marks;
 
     // getters and setter defonition.
     public int get_id ()
@@ -49,6 +54,15 @@ public class Student {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
+        Random random = new Random();
+        int[]temp =
+            {
+                random.nextInt(100),
+                random.nextInt(100),
+                random.nextInt(100),
+                random.nextInt(100)
+            };
+        this.marks = temp;
         this.course = null;
     }
 
@@ -57,6 +71,15 @@ public class Student {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
+        Random random = new Random();
+        int[]temp =
+            {
+                random.nextInt(100),
+                random.nextInt(100),
+                random.nextInt(100),
+                random.nextInt(100)
+            };
+        this.marks = temp;
         this.course = course;
     }
 
