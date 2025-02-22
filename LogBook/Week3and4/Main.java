@@ -1,4 +1,4 @@
-package LogBook.Week3;
+package LogBook.Week3and4;
 
 public class Main {
     public static void main(String[] args)
