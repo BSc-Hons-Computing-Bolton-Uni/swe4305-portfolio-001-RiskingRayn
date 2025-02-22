@@ -42,6 +42,8 @@ public class Student {
         System.out.println("first name " + this.first_name);
         System.out.println("last name " + this.last_name);
         this.course.print_values();
+        for (int mark: this.marks)
+            System.out.println("mark " + mark);
     }
 
         /* Allowing all the atributes to be passed through to the Student on creation.
