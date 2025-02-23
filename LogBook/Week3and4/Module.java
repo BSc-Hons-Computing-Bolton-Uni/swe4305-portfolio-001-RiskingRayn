@@ -14,24 +14,22 @@ public class Module {
         this.name = name;
     }
 
-    public String get_grads_from_marks(int mark)
+    public Grades  get_grads_from_marks(int mark)
     {
-        String grade;
-        if (mark > 100)
-            grade = "Invalid grade";
-        else if (mark >= 85)
-            grade = "A*";
-        else if (mark >= 75)
-            grade = "A";
-        else if (mark >= 65)
-            grade = "B";
-        else if (mark >= 55)
-            grade = "C";
-        else if (mark >= 40)
-            grade = "D";
+
+        Grades grade = Grades.INVALID_MARK;
+        if (mark > 85 && mark <= 100 )
+            grade = Grades.A;
+        else if (mark > 75)
+            grade = Grades.B;
+        else if (mark > 65)
+            grade = Grades.C;
+        else if (mark > 50)
+            grade = Grades.D;
+        else if (mark > 40)
+            grade = Grades.E;
         else if (mark >= 0)
-            grade = "f";
-        else grade = "Invalid grade";
+            grade = Grades.F;
         return grade;
     }
 

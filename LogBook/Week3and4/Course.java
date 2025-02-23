@@ -34,8 +34,8 @@ public class Course {
         String[] grades = new String[4];
         for(Module module: modules)
         {
-            String grade = module.get_grads_from_marks(marks[count]);
-            grades[count] = grade;
+            Grades grade = module.get_grads_from_marks(marks[count]);
+            grades[count] = grade.string_value;
             count+=1;
         }
         return grades;
