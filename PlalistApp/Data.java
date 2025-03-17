@@ -29,6 +29,18 @@ public class Data
 
     }
 
+    public ArrayList<Song> get_songs(ArrayList<Integer> song_ids)
+    {
+        ArrayList<Song> songs = new ArrayList<Song>();
+        return songs;
+    }
+
+    public ArrayList<Song> get_songs_above_play_count(int play_count_min)
+    {
+        ArrayList<Song> songs = new ArrayList<Song>();
+        return songs;
+    }
+
     public boolean check_libary_empty()
     {
         return true;

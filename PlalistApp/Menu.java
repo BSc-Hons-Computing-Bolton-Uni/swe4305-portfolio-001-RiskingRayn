@@ -246,11 +246,39 @@ public class Menu {
 
     public void all_songs_in_playlist_menu()
     {
+        Playlist playlis = find_playlist();
+        ArrayList<Integer> song_ids = playlis.get_song_ids();
+        ArrayList<Song> songs = this.data.get_songs(song_ids);
+        if (!songs.isEmpty())
+        {
+            for(Song s: songs)
+            {
+                s.print_all_values();
+            }
+        }
+        else
+        {
+            System.out.println("there is no songs in this playlist at this point.");
+        }
         reset_to_main();
     }
 
     public void all_songs_above_playcount_menu()
     {
+        System.out.println("Please enter a minimum play count");
+        int ans = get_ans_int();
+        ArrayList<Song> songs = data.get_songs_above_play_count(ans);
+        if (!songs.isEmpty())
+        {
+            for(Song s : songs)
+            {
+                s.print_all_values();
+            }
+        }
+        else
+        {
+            System.out.println("there are no songs above a play count of " + ans);
+        }
         reset_to_main();
     }
 
