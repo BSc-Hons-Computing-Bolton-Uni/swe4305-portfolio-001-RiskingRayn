@@ -46,7 +46,7 @@ public class Product {
     public void print_quantity()
         {System.out.println(this.quantity);}
 
-    // console print all value.
+    // console print all values.
 
     public void  print_all_values()
     {
