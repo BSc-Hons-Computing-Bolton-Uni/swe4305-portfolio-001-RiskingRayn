@@ -11,6 +11,8 @@ public class Data
 
     public void store_new_song(Song s)
     {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
 
     }
 
@@ -27,6 +29,18 @@ public class Data
     public void remove_song_form_libary(Song s)
     {
 
+    }
+
+    public ArrayList<Song> get_songs(ArrayList<Integer> song_ids)
+    {
+        ArrayList<Song> songs = new ArrayList<Song>();
+        return songs;
+    }
+
+    public ArrayList<Song> get_songs_above_play_count(int play_count_min)
+    {
+        ArrayList<Song> songs = new ArrayList<Song>();
+        return songs;
     }
 
     public boolean check_libary_empty()

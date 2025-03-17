@@ -10,7 +10,7 @@ public class Playlist {
     private String name;
     private int id;
     private float lenght;
-    private ArrayList<Song> songs = new ArrayList<Song>();
+    private ArrayList<Integer> song_ids = new ArrayList<Integer>();
 
     // constructer.
 
@@ -33,6 +33,11 @@ public class Playlist {
     public String get_name()
     {
         return this.name;
+    }
+
+    public ArrayList<Integer> get_song_ids()
+    {
+        return this.song_ids;
     }
 
     public void print_defanition_values()
