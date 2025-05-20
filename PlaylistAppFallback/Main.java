@@ -1,4 +1,4 @@
-package PlalistApp;
+package PlaylistAppFallback;
 
 public class Main
 {
